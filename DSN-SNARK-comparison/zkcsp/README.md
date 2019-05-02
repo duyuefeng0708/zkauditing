@@ -38,7 +38,11 @@ Once everything is set up, you're ready to run some verifiable
 computations! Please see [GETTINGSTARTED.md](GETTINGSTARTED.md) for a quick overview of the process.
 
 ## Docker ##
-A quicker start: dockerfile is provided to build a base docker image to use with projects. Just run:
+A dockerfile is provided to build a base docker image to use with projects. 
+
+The script is customized for Windows subsystem Ubuntu (with a daemon connected to the Windows docker outside; for normal docker, remove "-H localhost:2375")
+
+According to your environment, modify (or not), and run:
 
 ```bash
 ./build_docker.sh
